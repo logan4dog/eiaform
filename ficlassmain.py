@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets
 # contains UI from qt designer
-from filelist import Ui_MainWindow
+from ./filelist import Ui_MainWindow
 import os
 import re
 import sys
@@ -24,11 +24,11 @@ class MainWindow_Exec:
     def update_textedit(self):
         """Fill up TextEdit widget with curr dir file name"""
         #a = [x for x in os.listdir('.') if re.search('.py', x)]
-        a = [x for x in os.listdir('.')]
+        #a = [x for x in os.listdir('.')]
         self.ui.textEdit.setText("+++++++++++++++++++++++")
-        b = sorted(a)
-        for f in b:
-            self.ui.textEdit.append(f)
+        #b = sorted(a)
+        #for f in b:
+        self.ui.textEdit.append("eia data")
         self.ui.label.setText(os.getcwd())
 
     def getMainWindow(self):
